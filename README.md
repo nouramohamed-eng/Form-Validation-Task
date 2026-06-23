@@ -1,18 +1,51 @@
-# React + Vite
+# 💼 Project Application Form Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic, fully validated, and responsive **Project Application Form** built using **React** and modern frontend ecosystem tools. This component handles complex form states, dynamic arrays for project additions, conditional field rendering, and strict schema validation to ensure a seamless user onboarding experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Live Preview
 
-## React Compiler
+### 1. Main Application Form
+![Project Application Form](./src/assets/Screenshot%202026-06-23%20211138.png)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## ✨ Features
 
-## Expanding the ESLint configuration
+* **Complete Applicant Profile:** Collects multi-field inputs including Full Name, Email, Role Applied For, and Experience Levels.
+* **Dynamic Fields Array (`useFieldArray`):** Users can dynamically add, update, or remove multiple past projects seamlessly.
+* **Conditional UI Rendering:** The Notice Period dropdown displays smoothly only if the applicant selects *"No, I have notice period"* under Availability.
+* **Advanced Form Management:** Powered by `react-hook-form` for optimal rendering performance without unnecessary re-renders.
+* **Robust Schema Validation:** Fully integrated with `Zod` and `@hookform/resolvers/zod` to handle client-side validations and custom error messages.
+* **Polished Dark UI:** Tailored with a custom dark-themed interface utilizing specialized `shadcn/ui` custom primitives and primitives from `lucide-react` icons.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Built With
+
+* **Framework:** [React.js](https://react.dev/) + [Vite](https://vitejs.dev/)
+* **Form Logic:** `react-hook-form`
+* **Validation:** `Zod`
+* **UI Components:** `shadcn/ui` (Popover, Calendar, Select, Radio Group, Checkbox, Textarea, Input)
+* **Styling:** `Tailwind CSS` & `clsx` / `tailwind-merge` (`cn` utility)
+* **Icons:** `lucide-react`
+* **Date Management:** `date-fns`
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have your shadcn base component fields setup in your `@/components/ui/` folder:
+* `field` (Field, FieldGroup, FieldLabel, FieldError)
+* `input`, `textarea`, `button`, `label`
+* `select`, `radio-group`, `checkbox`
+* `calendar`, `popover`
+
+### Installation
+
+1. **Install the required dependencies:**
+   ```bash
+   npm install react-hook-form @hookform/resolvers zod lucide-react date-fns

@@ -47,7 +47,8 @@ export const ProjectAppForm = () => {
   const onSubmit = (data) => console.log("Form Data:", data);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="shadow-2xl rounded-xl p-8 bg-primary text-sidebar">
+    <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-3xl mx-auto shadow-2xl rounded-xl p-6 md:p-8 bg-primary text-sidebar"
+>
       
       {/* Header */}
       <div className="headerSec flex items-center gap-3">
